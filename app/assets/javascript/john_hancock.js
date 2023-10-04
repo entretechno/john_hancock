@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     function resizeCanvas() {
       var ratio =  Math.max(1, 1);
-      canvas.width = canvas.offsetWidth * 2(ratio);
+      canvas.width = canvas.offsetWidth * ratio;
       canvas.height = canvas.offsetHeight * ratio;
       canvas.getContext("2d").scale(ratio, ratio);
       signaturePad.clear();
