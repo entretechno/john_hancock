@@ -28,5 +28,6 @@ document.addEventListener('DOMContentLoaded', function(){
 function signatureClear() {
   let canvas = document.getElementById("JohnHancock-canvas");
   let context = canvas.getContext("2d");
-  context.clearRect(0, 0, canvas.width, canvas.height);
+  signaturePad = new SignaturePad(canvas);
+  signaturePad.clear();
 }
